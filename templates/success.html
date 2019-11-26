@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PdfCroppper</title>
+
+    <style>
+        body{
+            background-color: aqua;
+        }
+    </style>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container jumbotron">
+        
+    <div class="container text-center">
+            <h1>File Uploaded Successfully</h1>
+            <p>File Name : {{name}}</p>
+            <p>Do you want to extract pages from {{start}} to {{end}} </p>
+            <br>
+            <form action="/convert" method="post">
+                <input class="btn btn-primary" type="submit" value="EXTRACT!">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

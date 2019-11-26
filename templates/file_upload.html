@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PdfCroppper</title>
+
+    <style>
+        body{
+            background-color: aqua;
+        }
+    </style>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container jumbotron">
+        <div class="text-center">
+            <hr>
+            <div class="form-group">
+            <form action="/success" method="post" enctype="multipart/form-data">
+                <h2>Start Page</h2><br>
+                <input  class="form-control" type="text" name='start' placeholder="specify start page" required><br><br>
+                
+                <h2>End Page</h2><br>
+                <input  class="form-control" type="text" name='end' placeholder="specify end page"required><br><br>
+    
+                <h2>Upload File</h2><br>
+                <input type="file" name='file' required><br><br>
+                
+                <input class= "btn btn-primary" type="submit" value="UPLOAD">
+    
+            </form>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
